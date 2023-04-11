@@ -1,4 +1,6 @@
-const getStatus = require('../src/js/__tests__/basic.test.js ');
+const getStatus = require('../getStatus.test.js');
+/* import getStatus from "../basic";  */
+
 
 describe('getStatus function', () => {
   test('should return "healthy" for health > 50', () => {

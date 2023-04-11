@@ -1,6 +1,9 @@
-const getStatus = require('..src/js/__tests__/user.test.js ');
+ const getStatus = require('../basic.test.js'); 
+/* import { expect } from '@jest/globals';
+import getStatus from '../getStatus'; */
 
-describe('getStatus function', () => {
+
+ describe('getStatus function', () => {
   test('should return "healthy" for health > 50', () => {
     const status = getStatus({ name: 'Маг', health: 90 });
     expect(status).toBe('healthy');
@@ -15,4 +18,4 @@ describe('getStatus function', () => {
     const status = getStatus({ name: 'Маг', health: 10 });
     expect(status).toBe('critical');
   });
-});
+});  
