@@ -1,4 +1,4 @@
-import { sortHeroesByHealth } from "../basicTest.js";
+import { sortHeroesByHealth } from '../basicTest.js';
 
 describe('sortHeroesByHealth', () => {
   it('should sort heroes by health', () => {
@@ -10,7 +10,7 @@ describe('sortHeroesByHealth', () => {
     const sortedHeroes = [
       { name: 'маг', health: 100 },
       { name: 'лучник', health: 80 },
-      { name: 'мечник', health: 10 },
+      { name: 'мечник', health: 10 }.
     ];
     expect(sortHeroesByHealth(heroes)).toEqual(sortedHeroes);
   });
